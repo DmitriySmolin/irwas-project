@@ -1,4 +1,6 @@
-import { checkNumInputs } from './checkNumInputs';
+import {
+  checkNumInputs
+} from './checkNumInputs';
 export const changeModalState = (state) => {
   const windowForm = document.querySelectorAll('.balcon_icons_img');
   const windowWidth = document.querySelectorAll('#width');
