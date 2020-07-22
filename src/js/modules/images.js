@@ -19,10 +19,12 @@ export const images = () => {
       imgPopup.style.display = 'flex';
       const path = target.parentNode.getAttribute('href');
       bigImg.setAttribute('src', path);
+      document.body.style.overflow = 'hidden';
     }
 
     if (target && target.matches('div.imgPopup')) {
       imgPopup.style.display = 'none';
+      document.body.style.overflow = '';
     }
   });
 };
